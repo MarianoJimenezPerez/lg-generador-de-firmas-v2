@@ -1,0 +1,73 @@
+.steps {
+  width: 83%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .error{
+    display: none;
+    @media screen and (max-width: $small) {
+      display: block;
+    }
+  }
+  .steps__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media screen and (max-width: $small) {
+      display: none;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+    .steps__container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-bottom: 2rem;
+      .step {
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 1px solid $red;
+        text-align: left;
+        span {
+          padding: 1rem 1.5rem;
+          background-color: $light-gray;
+          font-size: 2.5rem;
+          border-right: 1px solid $red;
+          min-width: 2%;
+        }
+        p {
+          padding: 0.2rem 1rem;
+          line-height: 1.3rem;
+          b {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    a {
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
+      font-size: 2rem;
+      font-weight: 600;
+      background-color: transparent;
+      color: $black;
+      cursor: pointer;
+      text-decoration: none;
+      border: 1px solid $black;
+      transition: all 0.2 ease-in;
+    }
+    a:hover {
+      background-color: $red;
+      color: $ligth-text-color;
+    }
+  }
+}

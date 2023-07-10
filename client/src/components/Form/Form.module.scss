@@ -1,0 +1,40 @@
+@import "../../styles/components/form";
+.input_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  label {
+    position: relative;
+    padding-left: 25px;
+
+    input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+
+      & + span {
+        position: relative;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        border: 1px solid red;
+        background-color: transparent;
+      }
+
+      &:checked + span {
+        background-color: white;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          width: 14px;
+          height: 14px;
+          background-color: red;
+        }
+      }
+    }
+  }
+}

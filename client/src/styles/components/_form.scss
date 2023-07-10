@@ -1,0 +1,46 @@
+@import "./../base/variables";
+.form {
+  width: 30%;
+  border: 1px solid $red;
+  border-radius: 20px;
+  h2 {
+    background-color: $light-gray;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    font-size: 1.5rem;
+    padding: 15px 0;
+    border-bottom: 1px solid $red;
+  }
+  form {
+    padding: 10px 20px 40px 20px;
+    background-color: #ffffff;
+    border-radius: 0 0 20px 20px;
+
+    .input {
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      font-size: 1.2rem;
+      padding: 15px 0 15px 10px;
+      border-bottom: 1px solid $red;
+      color: #000000;
+    }
+    
+    input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: rgba(0,0,0,0.4);
+      opacity: 1; /* Firefox */
+    }
+    
+    input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: rgba(0,0,0,0.4);
+    }
+    
+    input::-ms-input-placeholder { /* Microsoft Edge */
+      color: rgba(0,0,0,0.4);
+    }
+
+    .input:focus {
+      outline: none;
+    }
+  }
+}

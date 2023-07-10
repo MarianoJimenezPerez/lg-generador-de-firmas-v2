@@ -1,0 +1,85 @@
+
+.home{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 83%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
+    .error{
+        display: none;
+        @media screen and (max-width: $small) {
+            display: block;
+        }
+    }
+
+    .home__container{
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        border-radius: 50%;
+        border: 1px solid $red;
+        width: 30vw;
+        height: auto;
+        padding: 8vw;
+        @media screen and (max-width: $notebook) {
+            padding: 7vw;
+            width: 36vw;
+            gap: 20px;
+        }
+        @media screen and (max-width: $small) {
+            display: none;
+        }
+        h1{
+            font-size: 2.5rem;
+            font-weight: 500;
+            margin-bottom: 80px;
+            @media screen and (max-width: $notebook) {
+                margin-bottom: 0;
+            }
+        }
+        .home__welcome__box{
+            width: 48   0px;
+            border-radius: 20px;
+            border: 1px solid $red;
+            h2{
+                border-bottom: 1px solid $red;
+                padding: 20px;
+                text-align: left;
+                font-size: 2.7rem;
+                background-color: $light-gray;
+                border-radius: 20px 20px 0 0;
+            }
+            p{
+                padding: 15px 30px 40px 15px;
+                text-align: left;
+                line-height: 1.2rem;
+            }
+        }
+        a{
+            width: fit-content;
+            align-self: center;
+            button{
+            margin-top: 40px;
+            width: auto;
+            align-self: center;
+            @media screen and (max-width: $notebook) {
+                margin-top: 0;
+            }
+        }
+        }
+    }
+    .home__logo{
+        position: absolute;
+        right: -20px;
+        bottom: 0;
+        @media screen and (max-width: $notebook) {
+            right: -80px;
+        }
+        @media screen and (max-width: $small) {
+            display: none;
+        }
+    }
+}

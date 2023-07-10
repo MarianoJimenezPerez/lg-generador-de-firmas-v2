@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employeds",
+  "info": {
+    "singularName": "employed",
+    "pluralName": "employeds",
+    "displayName": "employed"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "imageName": {
+      "type": "string"
+    },
+    "imageUrl": {
+      "type": "string"
+    }
+  }
+}

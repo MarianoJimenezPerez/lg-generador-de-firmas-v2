@@ -1,0 +1,42 @@
+@import "./../base/variables";
+.sign__container {
+  border: 1px solid $red;
+  border-radius: 20px;
+  overflow: hidden;
+  width: calc(70% - 40px);
+  .sign__container__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px;
+    gap: 15px;
+    background-color: $light-gray;
+    border-bottom: 1px solid $red;
+    span {
+      font-size: 1.3rem;
+    }
+  }
+  .sign__container__content {
+    padding: 5px 4rem;
+    .gray__bar {
+      background-color: $light-gray;
+      height: 0.8rem;
+      display: block;
+      margin: 4px 0;
+    }
+    span:nth-child(1) {
+      width: 100%;
+    }
+    span:nth-child(2) {
+        width: 80%;
+    }
+    span:nth-child(3) {
+        width: 30%;
+    }
+    span:nth-child(4) {
+        width: 60%;
+        margin-bottom: 4rem;
+    }
+  }
+}
